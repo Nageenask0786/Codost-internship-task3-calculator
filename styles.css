@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: #29293d;
+    align-items: center;
+    width: 100vw;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+input {
+    width: 460px;
+   height: 100px;
+    outline: none;
+    color: #ffffff;
+    background-color: #14141f;
+    border: 0px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 40px;
+    text-align: right;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    background-color: #1f1f2e;
+    width: 460px;
+    background-size: cover;
+    border-radius: 9px;
+    margin-top: 7px;
+    align-items: center;
+    justify-content: center;
+}
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.button {
+    height: 70px;
+    width: 90px;
+    border-radius: 12px;
+    box-shadow: -6px -6px 10px 10px #1f1f2e;
+    outline: 1px solid #14141f;
+    border: 0px;
+    color: #14141f;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Roboto";
+    margin: 12px;
+    
+}
+
+.del {
+    background-color: orange;
+    color: white;
+    outline: 1px solid #ffffff;
+}
+
+.reset {
+    background-color: orange;
+    color: #ffffff;
+    width: 145px;
+    outline: 1px solid #ffffff;
+}
+.equal-to {
+    background-color: green;
+    width: 145px;
+    font-weight: bold;
+    font-family: "Roboto";
+    color: white;
+    outline: 1px solid #ffffff;
+}
+
+@media screen  and (max-width : 576px){
+    .input-container {
+        width: 90%;
+    }
+    input {
+        width: 100%;
+    }
+    .calculator{
+        display: flex;
+        justify-content: space-evenly;
+        width:90%;
+    }
+    .button {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+    .reset,.equal-to {
+        width: 90px;
+    }
+} 
+@media screen and (max-width:300px) {
+    .input-container {
+        width: 80%;
+    }
+    input {
+        width: 100%;
+    }
+    .calculator{
+        width: 80%;
+    }
+    
+    .button {
+        width: 30px;
+        height: 40px;
+    }
+    .reset,.equal-to {
+        width: 50px;
+        
+    }
+}
